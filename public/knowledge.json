@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "title": "HushTree",
+      "parentId": null,
+      "domain": "知识中枢",
+      "direction": null,
+      "color": "#17202a",
+      "summary": "一个以 Markdown 文件夹持续生长的个人知识库。",
+      "order": 999,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "HushTree",
+          "content": "# HushTree\n\n这里是所有知识的起点。文件夹表达层级，`index.md` 解释每个节点；知识随问题逐步生长。\n\n> 从目录进入领域，从概念继续追问。\n\n## 使用原则\n\n- 一个概念只保留一个主节点\n- 跨领域联系写入正文并使用双链引用\n- 每篇笔记尽量回答一个明确问题\n- 默认保持百科粒度，需要时再向专业层次深入"
+        },
+        {
+          "slug": "principles",
+          "title": "维护原则",
+          "content": "# 维护原则\n\n当一条笔记变得过长时，把它拆成新的子节点；当两个领域偶然相遇时，用关联保留这条思路。\n\n知识的价值可以粗略写成：\n\n$$\nV = C \\times R \\times A\n$$\n\n其中 $C$ 是清晰度，$R$ 是关联度，$A$ 是可应用程度。"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/computer-systems/computer-networks",
+      "title": "计算机网络",
+      "parentId": "root/science/computer-science/computer-systems",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "研究不同计算设备如何分层、可靠地交换信息。",
+      "order": 1,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "计算机网络",
+          "content": "# 计算机网络\n\n## 定义\n\n研究计算设备如何通过通信链路、协议和分层体系交换数据。\n\n## 上位\n\n[[root/science/computer-science/computer-systems|计算机系统]]\n\n## 核心概念\n\n- 分层与封装\n- 数据包、地址与路由\n- 可靠传输与拥塞控制\n- 局域网、互联网和应用层协议\n- 网络安全的基本边界\n\n## 证据与例子\n\n一次网页访问会经过 DNS、传输层连接、IP 路由和链路层传输。\n\n## 内部逻辑\n\n从“两个进程如何通信”出发，依次理解链路、网络、传输和应用层如何分工。\n\n## 跨分支引用\n\n- [[root/science/computer-science/computer-systems/operating-systems|操作系统]]：套接字、进程和网络设备由操作系统管理。\n\n## 待展开\n\n- 按课程章节建立协议与机制子节点\n- 补充抓包实验和典型故障案例"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/computer-systems",
+      "title": "计算机系统",
+      "parentId": "root/science/computer-science",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "理解硬件、操作系统、网络与应用如何共同完成计算。",
+      "order": 1,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "计算机系统",
+          "content": "# 计算机系统\n\n## 定义\n\n研究硬件、操作系统、网络和应用如何协作完成计算任务。\n\n## 下位\n\n- [[root/science/computer-science/computer-systems/operating-systems|操作系统]]\n- [[root/science/computer-science/computer-systems/computer-networks|计算机网络]]\n\n## 内部逻辑\n\n操作系统组织单台计算机的资源，计算机网络让多个计算系统交换信息。"
+        }
+      ]
+    },
+    {
+      "id": "root/science/mathematics",
+      "title": "数学",
+      "parentId": "root/science",
+      "domain": "自然科学",
+      "direction": "north",
+      "color": "#7a5caf",
+      "summary": "研究数量、结构、空间、变化与形式推理的基础学科。",
+      "order": 1,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "数学",
+          "content": "# 数学\n\n## 定义\n\n研究数量、结构、空间、变化以及形式推理的学科。\n\n## 内部逻辑\n\n当前保留百科入口；后续随具体问题补充分析、代数、几何、概率统计和离散数学等主干。\n\n## 待展开\n\n- 线性代数\n- 概率论与数理统计\n- 离散数学\n- 几何与拓扑"
+        }
+      ]
+    },
+    {
+      "id": "root/science",
+      "title": "自然科学 Science",
+      "parentId": "root",
+      "domain": "自然科学",
+      "direction": "south",
+      "color": "#3976c5",
+      "summary": "以观察、数学模型和可检验证据理解自然世界。",
+      "order": 1,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "自然科学 Science",
+          "content": "# 自然科学 Science\n\n科学以可检验的方式构造对世界的解释，并随新证据修正这些解释。\n\n## 下位学科\n\n- [[root/science/mathematics|数学]]\n- [[root/science/physics|物理]]\n- [[root/science/computer-science|计算机科学]]"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/computer-systems/operating-systems",
+      "title": "操作系统",
+      "parentId": "root/science/computer-science/computer-systems",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "管理硬件资源，并为程序提供稳定抽象与运行环境。",
+      "order": 2,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "操作系统",
+          "content": "# 操作系统\n\n## 定义\n\n管理计算机硬件资源并为程序提供抽象和运行环境的系统软件。\n\n## 上位\n\n[[root/science/computer-science/computer-systems|计算机系统]]\n\n## 核心概念\n\n- 进程与线程\n- 调度与并发\n- 虚拟内存\n- 文件系统\n- 输入输出与设备管理\n- 保护与权限\n\n## 证据与例子\n\n多个程序看似同时运行，是调度、上下文切换和硬件并行共同作用的结果。\n\n## 内部逻辑\n\n操作系统在有限硬件上建立隔离、共享和抽象，使应用无需直接控制每个硬件细节。\n\n## 跨分支引用\n\n- [[root/science/computer-science/computer-systems/computer-networks|计算机网络]]：网络通信依赖进程、系统调用与设备驱动。\n\n## 待展开\n\n- 建立进程、内存、文件系统等课程子节点\n- 补充 Linux 实验与系统调用实例"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/artificial-intelligence",
+      "title": "人工智能",
+      "parentId": "root/science/computer-science",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "研究机器如何感知、学习、推理并采取行动。",
+      "order": 2,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "人工智能",
+          "content": "# 人工智能\n\n## 定义\n\n研究能够感知、推理、学习、决策或行动的计算系统。\n\n## 下位\n\n- [[root/science/computer-science/artificial-intelligence/machine-learning|机器学习]]\n\n## 待展开\n\n- 搜索与规划\n- 知识表示与推理\n- 自然语言处理\n- 计算机视觉"
+        }
+      ]
+    },
+    {
+      "id": "root/humanity",
+      "title": "人文科学 Humanity",
+      "parentId": "root",
+      "domain": "人文科学",
+      "direction": null,
+      "color": "#8a5a44",
+      "summary": "理解人的思想、历史、文化与社会经验。",
+      "order": 2,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "人文科学 Humanity",
+          "content": "# 人文科学 Humanity\n\n人文科学关注人如何理解自身、组织社会并创造意义。当前保留为百科入口，等待未来的问题推动它继续展开。\n\n## 待展开\n\n- 哲学\n- 历史\n- 语言与文学\n- 社会科学"
+        }
+      ]
+    },
+    {
+      "id": "root/science/physics",
+      "title": "物理",
+      "parentId": "root/science",
+      "domain": "自然科学",
+      "direction": null,
+      "color": "#3976c5",
+      "summary": "用数学模型与实验研究物质、能量、时空和相互作用。",
+      "order": 2,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "物理",
+          "content": "# 物理\n\n## 定义\n\n研究物质、能量、时空和相互作用基本规律的自然科学。\n\n## 内部逻辑\n\n通过数学模型连接可观测现象与基本规律，再由实验检验模型适用范围。\n\n## 待展开\n\n- 经典力学\n- 电磁学\n- 热力学与统计物理\n- 量子力学\n- 相对论"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science",
+      "title": "计算机科学",
+      "parentId": "root/science",
+      "domain": "自然科学",
+      "direction": "east",
+      "color": "#0f8b8d",
+      "summary": "研究计算、信息表示、算法以及计算系统。",
+      "order": 3,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "计算机科学",
+          "content": "# 计算机科学\n\n## 定义\n\n研究计算、信息表示、算法以及计算系统的学科。\n\n## 内部逻辑\n\n当前从两个入口展开：计算机系统解释“计算如何被机器实现”，人工智能解释“机器如何从数据与交互中形成行为”。\n\n## 下位\n\n- [[root/science/computer-science/computer-systems|计算机系统]]\n- [[root/science/computer-science/artificial-intelligence|人工智能]]\n\n## 待展开\n\n- 理论计算机科学\n- 程序设计语言\n- 软件工程\n- 人机交互"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/artificial-intelligence/machine-learning",
+      "title": "机器学习",
+      "parentId": "root/science/computer-science/artificial-intelligence",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "让计算机从数据中学习规律，并用于预测或决策。",
+      "order": 999,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "机器学习",
+          "content": "# 机器学习\n\n## 定义\n\n研究如何让计算系统利用数据改善预测、表示或决策能力。\n\n## 上位\n\n[[root/science/computer-science/artificial-intelligence|人工智能]]\n\n## 下位\n\n- [[root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning|强化学习]]\n- 待建立：监督学习、无监督学习与生成模型\n\n## 核心概念\n\n- 数据、特征与表示\n- 模型、参数与假设空间\n- 损失函数与优化\n- 训练、验证与测试\n- 泛化、偏差与方差\n\n## 证据与例子\n\n分类器通过已标注样本学习决策边界，再对未见样本作出预测。\n\n## 内部逻辑\n\n用数据定义经验，用目标函数衡量误差，用优化算法寻找模型，再用未参与训练的数据检验泛化。\n\n## 跨分支引用\n\n- [[root/science/mathematics|数学]]：极限、导数与优化是理解训练过程的基础。\n\n## 待展开\n\n- 按课程顺序建立模型与算法节点\n- 标记所需的线性代数、概率统计和优化知识"
+        }
+      ]
+    },
+    {
+      "id": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning",
+      "title": "强化学习",
+      "parentId": "root/science/computer-science/artificial-intelligence/machine-learning",
+      "domain": "计算机科学",
+      "direction": null,
+      "color": "#0f8b8d",
+      "summary": "智能体通过与环境交互和奖励信号学习行为策略。",
+      "order": 999,
+      "relations": [],
+      "documents": [
+        {
+          "slug": "index",
+          "title": "强化学习",
+          "content": "# 强化学习\n\n## 定义\n\n研究智能体如何通过与环境交互、接收奖励并改进长期决策策略。\n\n## 上位\n\n[[root/science/computer-science/artificial-intelligence/machine-learning|机器学习]]\n\n## 核心概念\n\n- 智能体、环境、状态与动作\n- 奖励与回报\n- 策略与价值函数\n- 马尔可夫决策过程\n- 探索与利用\n- 时序差分和策略优化\n\n## 证据与例子\n\n游戏智能体通过反复尝试动作，根据最终输赢更新对局面的价值估计。\n\n## 内部逻辑\n\n环境产生经验，奖励定义目标，价值估计连接当前行动与未来结果，策略据此持续改进。\n\n## 跨分支引用\n\n- [[root/science/mathematics|数学]]：连续优化和函数逼近需要分析基础。\n\n## 待展开\n\n- 建立 MDP、动态规划、蒙特卡洛和时序差分子节点\n- 补充经典控制与深度强化学习之间的联系"
+        }
+      ]
+    }
+  ],
+  "editable": false
+}
