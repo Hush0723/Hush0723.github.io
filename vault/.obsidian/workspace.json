@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-2-基本概率不等式.md",
+                "file": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-1-强化学习概述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lecture-2-基本概率不等式"
+              "title": "lecture-1-强化学习概述"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b431b5eb99b2db3",
@@ -190,21 +191,26 @@
   },
   "active": "f7e823da6b2984cb",
   "lastOpenFiles": [
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-1 概述.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/RL1-1.png",
+    "root/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-1-强化学习概述.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/index.md",
+    "root/science/index.md",
+    "root/science/computer-science/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-2-基本概率不等式.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-1 概述.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程",
     "root/science/computer-science/artificial-intelligence/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/机器学习",
-    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/index.md",
     "root/mathematics/mathematical-analysis/index.md",
     "root/technology/index.md",
     "root/science/scientific-method/index.md",
-    "root/science/index.md",
     "root/art/interaction-design/index.md",
     "root/art/index.md",
-    "root/principles.md",
-    "root/index.md"
+    "root/principles.md"
   ]
 }
