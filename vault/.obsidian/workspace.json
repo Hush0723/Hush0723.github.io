@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-1-强化学习概述.md",
+                "file": "root/science/computer-science/computer-systems/computer-networks/计算机网络-课程/lecture-1-网络基础知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lecture-1-强化学习概述"
+              "title": "lecture-1-网络基础知识"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b431b5eb99b2db3",
@@ -213,11 +214,16 @@
   },
   "active": "f7e823da6b2984cb",
   "lastOpenFiles": [
-    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
+    "root/science/computer-science/computer-systems/computer-networks/计算机网络-课程/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/index.md",
+    "root/science/computer-science/computer-systems/computer-networks/计算机网络-课程/lecture-1-网络基础知识.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-1-强化学习概述.md",
+    "root/science/computer-science/computer-systems/operating-systems/操作系统-课程/index.md",
+    "root/science/computer-science/computer-systems/operating-systems/操作系统-课程",
+    "root/science/computer-science/computer-systems/computer-networks/计算机网络-课程",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/index.md",
     "root/science/computer-science/artificial-intelligence/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/lecture-2-基本概率不等式.md",
