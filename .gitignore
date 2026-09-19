@@ -37,9 +37,14 @@ yarn-error.log*
 # typescript
 next-env.d.ts
 /dist/
+/public/knowledge-assets/
 /.wrangler/
 /.sites-runtime/
 /.agents/
 /.codex/
 /outputs/
 /work/
+
+# Obsidian machine-local state and installed plugin bundles
+/vault/.obsidian/workspace*.json
+/vault/.obsidian/plugins/

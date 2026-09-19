@@ -1,6 +1,6 @@
 ---
 document_title: Lecture 1 概述
-node: root/science/computer-science/artificial-intelligence/machine-learning/机器学习
+node: root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程
 updated: 2026-09-17T06:02:12.737Z
 ---
 
@@ -35,5 +35,4 @@ $$(x,y)\sim \text{i.i.d.}\, P_{X,Y}$$
 
 ## 0 参考资料
 线上课程：机器学习：cs231n、cs229、cs224；强化学习：cs285
-
 

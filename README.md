@@ -19,6 +19,7 @@
 - `parent` 表示唯一的主父节点。
 - `relations` 保存跨节点关联。
 - 正文支持普通 Obsidian WikiLink，例如 `[[root/technology/web|Web 开发]]`。
+- 支持引用同节点文件夹中的 Obsidian 图片附件，例如 `![[diagram.png]]`；静态构建只会发布被笔记引用的图片。
 
 请保留 `index.md` 的 frontmatter 字段。正文可直接在 Obsidian 中修改；本地服务会监听 `vault` 中的变化，网页会自动更新，无需手动刷新。
 

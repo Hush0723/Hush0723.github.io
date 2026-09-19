@@ -108,6 +108,7 @@ button, input, textarea { font: inherit; }
 .markdown-body pre { overflow-x: auto; padding: 16px; border: 1px solid #dfe4e7; border-radius: 6px; background: #f5f7f8; font-size: 14px; }
 .markdown-body code { font-family: Consolas, monospace; font-size: .9em; }
 .markdown-body a, .wiki-link { color: #147471; text-decoration: underline; text-underline-offset: 3px; }
+.markdown-body img { display: block; width: auto; max-width: 100%; height: auto; margin: 24px auto; border: 1px solid #dfe4e7; border-radius: 6px; }
 .wiki-link { padding: 0; border: 0; background: none; cursor: pointer; }
 .markdown-body table { width: 100%; border-collapse: collapse; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; font-size: 14px; }
 .markdown-body th, .markdown-body td { padding: 8px 10px; border: 1px solid #dce1e5; text-align: left; }

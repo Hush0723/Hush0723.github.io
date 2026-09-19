@@ -1,6 +1,7 @@
 import http from "node:http";
 import { watch } from "node:fs";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import { addDocument, addRelation, createNode, deleteNode, readKnowledge, reorderNode, updateDocument, updateNode, vaultRoot } from "./vault-store.mjs";
 
 const port = Number(process.env.KT_API_PORT || 4174);
@@ -12,6 +13,15 @@ const headers = {
 };
 const eventClients = new Set();
 let changeTimer;
+const imageTypes = new Map([
+  [".avif", "image/avif"],
+  [".gif", "image/gif"],
+  [".jpeg", "image/jpeg"],
+  [".jpg", "image/jpeg"],
+  [".png", "image/png"],
+  [".svg", "image/svg+xml"],
+  [".webp", "image/webp"],
+]);
 
 function respond(response, status, data) {
   response.writeHead(status, headers);
@@ -29,6 +39,26 @@ async function bodyOf(request) {
 
 const server = http.createServer(async (request, response) => {
   if (request.method === "OPTIONS") return respond(response, 204, {});
+  const requestUrl = new URL(request.url || "/", "http://localhost");
+  if (request.method === "GET" && requestUrl.pathname.startsWith("/api/assets/")) {
+    try {
+      const relativePath = decodeURIComponent(requestUrl.pathname.slice("/api/assets/".length));
+      const file = path.resolve(vaultRoot, relativePath);
+      const vaultPrefix = path.resolve(vaultRoot) + path.sep;
+      const contentType = imageTypes.get(path.extname(file).toLowerCase());
+      if (!file.toLowerCase().startsWith(vaultPrefix.toLowerCase()) || !contentType) throw new Error("Invalid asset path");
+      const content = await readFile(file);
+      response.writeHead(200, {
+        "Access-Control-Allow-Origin": "http://localhost:5173",
+        "Cache-Control": "no-cache",
+        "Content-Type": contentType,
+      });
+      response.end(content);
+    } catch {
+      respond(response, 404, { error: "Attachment not found" });
+    }
+    return;
+  }
   if (request.method === "GET" && request.url === "/api/events") {
     response.writeHead(200, {
       "Access-Control-Allow-Origin": "http://localhost:5173",

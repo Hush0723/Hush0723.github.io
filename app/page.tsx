@@ -25,8 +25,18 @@ type NodeForm = { title: string; parentId: string; summary: string; content: str
 const emptySnapshot: Snapshot = { nodes: [], editable: false };
 const emptyNodeForm: NodeForm = { title: "", parentId: "root", summary: "", content: "# 新节点\n\n从这里开始记录。" };
 
-function wikiMarkdown(content: string) {
-  return content.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, id, label) => "[" + (label || id) + "](knowledge://" + id + ")");
+function wikiMarkdown(content: string, nodeId: string, editable: boolean) {
+  const withImages = content.replace(/!\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, attachment, label) => {
+    const filename = String(attachment).trim();
+    const encodedPath = [...nodeId.split("/"), ...filename.replaceAll("\\", "/").split("/")]
+      .filter(Boolean).map(encodeURIComponent).join("/");
+    const source = editable
+      ? `http://localhost:4174/api/assets/${encodedPath}`
+      : `/knowledge-assets/${encodedPath}`;
+    const alt = String(label || filename.split("/").at(-1) || "笔记图片").replace(/[\[\]]/g, "");
+    return `![${alt}](${source})`;
+  });
+  return withImages.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, id, label) => "[" + (label || id) + "](knowledge://" + id + ")");
 }
 
 async function fetchSnapshot() {
@@ -238,7 +248,7 @@ export default function Home() {
 
           {selected.documents.length > 1 && <div className="documents-row"><Tabs value={activeDoc.slug} onValueChange={setActiveDocument}><TabsList variant="line">{selected.documents.map((doc) => <TabsTrigger key={doc.slug} value={doc.slug}><BookOpen />{doc.title}</TabsTrigger>)}</TabsList></Tabs></div>}
 
-          <div className="markdown-body"><ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]} urlTransform={(url) => url.startsWith("knowledge://") ? url : defaultUrlTransform(url)} components={{ a: ({ href, children: linkChildren }) => href?.startsWith("knowledge://") ? <button className="wiki-link" onClick={() => { const node = snapshot.nodes.find((item) => item.id === href.slice(12)); if (node) selectNode(node); }}>{linkChildren}</button> : <a href={href} target="_blank" rel="noreferrer">{linkChildren}</a> }}>{wikiMarkdown(activeDoc.content)}</ReactMarkdown></div>
+          <div className="markdown-body"><ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]} urlTransform={(url) => url.startsWith("knowledge://") ? url : defaultUrlTransform(url)} components={{ a: ({ href, children: linkChildren }) => href?.startsWith("knowledge://") ? <button className="wiki-link" onClick={() => { const node = snapshot.nodes.find((item) => item.id === href.slice(12)); if (node) selectNode(node); }}>{linkChildren}</button> : <a href={href} target="_blank" rel="noreferrer">{linkChildren}</a> }}>{wikiMarkdown(activeDoc.content, selected.id, snapshot.editable)}</ReactMarkdown></div>
 
           {children.length > 0 && <section className="child-directory"><div className="section-heading"><div><span>继续探索</span><h2>{selected.title}的子节点</h2></div><strong>{children.length}</strong></div><div className="child-list">{children.map((node) => <button key={node.id} onClick={() => selectNode(node)}><span><strong>{node.title}</strong><small>{node.summary || "尚未填写摘要"}</small></span><ChevronRight /></button>)}</div></section>}
           {snapshot.editable && <footer className="article-footer"><Button variant="outline" onClick={() => setDocumentDialog(true)}><FilePlus2 />添加补充文档</Button></footer>}

@@ -1,5 +1,5 @@
 ---
-id: root/science/computer-science/artificial-intelligence/machine-learning/机器学习
+id: root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程
 title: 机器学习（课程）
 parent: root/science/computer-science/artificial-intelligence/machine-learning
 domain: 计算机科学
