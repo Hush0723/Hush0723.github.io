@@ -67,5 +67,5 @@ $$\pi_t(a)=P(A_t=a)=\frac{\exp(H_t(a))}{\sum_{b=1}^k\exp(H_t(b))}$$
 并根据奖励大小更新$H$：\
 $$H_{t+1}(A_t)=H_t(A_t)+\alpha(R_t-\bar{R_t})(1-\pi_t(A_t))$$\
 $$H_{t+1}(a\ne A_t)=H_t(a)-\alpha(R_t-\bar{R_t})\pi_t(a)$$\
-其中$R_t-\bar{R_t}$描述了所选策略的优劣，$\bar{R_t}$为所有收益的平均值。
+其中$R_t-\bar{R_t}$描述了所选策略的优劣，$\bar{R_t}$为所有收益的平均值，据说，这一系数源于**梯度下降法**。
 

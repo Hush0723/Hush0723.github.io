@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789657155715-dxdd4hdkx",
+  "providerId": "codex",
+  "title": "hi",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789657155719,
+  "lastActivityAt": 1789657275621,
+  "sessionId": "01a0afe1-11d7-7573-87ab-101b2def7090",
+  "selectedModel": "gpt-5.6-terra",
+  "providerState": {
+    "threadId": "01a0afe1-11d7-7573-87ab-101b2def7090",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "C:\\Users\\86185\\.codex\\sessions\\2026\\09\\17\\rollout-2026-09-17T22-59-18-01a0afe1-11d7-7573-87ab-101b2def7090.jsonl",
+    "transcriptRootPath": "C:\\Users\\86185\\.codex\\sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
+  "usage": {
+    "inputTokens": 14073,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 3840,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 14073,
+    "percentage": 5,
+    "model": "gpt-5.6-terra"
+  }
+}

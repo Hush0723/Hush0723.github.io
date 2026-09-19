@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789657155715-dxdd4hdkx",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789657155826-l7qvh08",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789657155709-luilu3x",
+      "timestamp": 1789657155709,
+      "rawDisplayText": "hi",
+      "canonicalText": "hi",
+      "context": {
+        "linkedContent": {
+          "path": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "88de65a2615a366404fdfd86bc354f32929270ce50be0af4a2bb771e29bf83ef",
+      "providerUserMessageId": "01a0afe1-12c5-77e3-a2da-29379f54780a",
+      "providerAssistantMessageId": "msg_006777a024f06248016aac00b9f05887d0b053157efea897f6"
+    }
+  ]
+}

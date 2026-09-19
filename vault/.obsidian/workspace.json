@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"color\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5b431b5eb99b2db3",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "root/technology/index.md",
+                "file": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,20 +161,42 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "root/technology/index.md",
-                "followCursor": false,
+                "file": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "8de1caf3e770eef2",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1789657135499-11crgfm",
+                      "conversationId": "conv-1789657155715-dxdd4hdkx"
+                    }
+                  ],
+                  "activeTabId": "tab-1789657135499-11crgfm"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 578.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -186,26 +207,29 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "realclaudian:Open Claudian": false
     }
   },
   "active": "f7e823da6b2984cb",
   "lastOpenFiles": [
-    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/RL1-1.png",
-    "root/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-1-强化学习概述.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/index.md",
-    "root/science/index.md",
-    "root/science/computer-science/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-2-基本概率不等式.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/lecture-1 概述.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程",
-    "root/science/computer-science/artificial-intelligence/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/index.md",
     "root/science/computer-science/artificial-intelligence/machine-learning/index.md",
-    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习",
+    "root/science/computer-science/artificial-intelligence/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/lecture-2-基本概率不等式.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程/lecture-1 概述.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/RL1-1.png",
+    "root/science/computer-science/computer-systems/index.md",
+    "root/science/computer-science/index.md",
+    "root/index.md",
+    "root/science/index.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程",
+    "root/science/computer-science/artificial-intelligence/machine-learning.md",
+    "root/science/computer-science/artificial-intelligence/machine-learning/机器学习-课程",
     "root/mathematics/mathematical-analysis/index.md",
     "root/technology/index.md",
     "root/science/scientific-method/index.md",

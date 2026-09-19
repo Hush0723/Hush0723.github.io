@@ -1,0 +1,11 @@
+{
+  "id": "conv-1789656746410-kv5wyrgyl",
+  "providerId": "claude",
+  "title": "hi",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789656746422,
+  "lastActivityAt": 1789656752276,
+  "sessionId": null,
+  "selectedModel": "opus",
+  "linkedContentPath": "root/science/computer-science/artificial-intelligence/machine-learning/reinforcement-learning/强化学习-课程/lecture-2-有限马尔科夫决策过程.md"
+}
